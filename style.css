@@ -1,0 +1,246 @@
+/* p {
+    color: RED;
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f9f8;
+    color: #1f2d2b;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.home-nav {
+    background-color: #0f4c5c;
+    padding: 1rem;
+}
+
+.home-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.home-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-nav a:hover,
+.home-nav a[aria-current="page"] {
+    text-decoration: underline;
+}
+
+.hero,
+.page-hero {
+    min-height: 360px;
+    padding: 4rem 1.5rem;
+    text-align: center;
+    background: linear-gradient(rgba(15, 76, 92, 0.75), rgba(15, 76, 92, 0.75)),
+                url("images/beaches.jpg") center/cover no-repeat;
+    color: white;
+}
+
+.hero-title,
+.page-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle,
+.page-hero p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+.button,
+button {
+    display: inline-block;
+    background-color: #f4a261;
+    color: #1f2d2b;
+    padding: 0.8rem 1.2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover,
+button:hover {
+    background-color: #e76f51;
+    color: white;
+}
+
+.about,
+.attractions,
+.biggest-amenities,
+.page-intro,
+.activity-grid,
+.info-grid,
+.contact-form {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.about {
+    text-align: center;
+}
+
+.about-title,
+.section-title,
+.biggest-amenities-title,
+.contact-form h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-subtitle {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+.attractions,
+.amenities-container,
+.activity-grid,
+.info-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.attractions {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.attractions .section-title {
+    grid-column: 1 / -1;
+}
+
+.attraction-card,
+.amenity-card,
+.activity-card,
+.info-card {
+    background-color: white;
+    padding: 1.25rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.attraction-card h3,
+.amenity-card h3,
+.activity-card h2,
+.info-card h2 {
+    color: #0f4c5c;
+    margin-bottom: 0.4rem;
+}
+
+.attraction-card h4 {
+    color: #e76f51;
+    margin-bottom: 0.8rem;
+}
+
+.amenities-container,
+.activity-grid,
+.info-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.page-intro {
+    text-align: center;
+}
+
+.page-intro p {
+    max-width: 800px;
+    margin: 1.5rem auto 0;
+    font-size: 1.1rem;
+}
+
+.dining-hero {
+    background-image: linear-gradient(rgba(15, 76, 92, 0.75), rgba(15, 76, 92, 0.75)),
+                      url("images/dining.jpg");
+}
+
+.lodging-hero {
+    background-image: linear-gradient(rgba(15, 76, 92, 0.75), rgba(15, 76, 92, 0.75)),
+                      url("images/lodging.jpg");
+}
+
+.transportation-hero {
+    background-image: linear-gradient(rgba(15, 76, 92, 0.75), rgba(15, 76, 92, 0.75)),
+                      url("images/transportation.jpg");
+}
+
+.contact-hero {
+    background-image: linear-gradient(rgba(15, 76, 92, 0.75), rgba(15, 76, 92, 0.75)),
+                      url("images/contact.jpg");
+}
+
+.contact-form {
+    background-color: white;
+    border-radius: 14px;
+    margin-bottom: 3rem;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font: inherit;
+}
+
+footer {
+    background-color: #0f4c5c;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .hero-title,
+    .page-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .home-nav ul {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+}
